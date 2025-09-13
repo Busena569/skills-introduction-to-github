@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RoyDesigners</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="logo-title">
+            <span class="company-name">RoyDesigners</span>
+            <span class="subtitle">Graphic Design Studio</span>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#order">Products</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#ai-assistant" class="chat-btn">Chat</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <h1><span class="highlight">We craft memorable &amp; professional designs</span></h1>
+            <p>RoyDesigners offers logos, posters, social media templates, packaging and more. Browse our work and chat with our assistant for pricing or custom quotes.</p>
+            <div class="hero-actions">
+                <a href="#portfolio" class="btn-primary">View Portfolio</a>
+                <a href="#contact" class="btn-secondary">Contact</a>
+            </div>
+            <img src="images/profile-readme-example.png" alt="featured" class="hero-img">
+        </section>
+        <section id="portfolio">
+            <h2>Portfolio</h2>
+            <div class="portfolio-tabs">
+                <button class="tab active">All</button>
+                <button class="tab">Branding</button>
+                <button class="tab">Posters</button>
+            </div>
+            <div class="portfolio-items">
+                <div class="portfolio-card">
+                    <img src="images/create-new-file.png" alt="Bold Logo - Atlas Co.">
+                    <div class="card-content">
+                        <strong>Bold Logo - Atlas Co.</strong>
+                        <span class="card-tag">Branding</span>
+                    </div>
+                </div>
+                <div class="portfolio-card">
+                    <img src="images/commit-full-screen.png" alt="Event Poster - Summer Fest">
+                    <div class="card-content">
+                        <strong>Event Poster - Summer Fest</strong>
+                        <span class="card-tag">Posters</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="order">
+            <h2>Order</h2>
+            <form id="order-form">
+                <label for="customer-name">Your Name:</label>
+                <input type="text" id="customer-name" name="customer-name" required>
+                <label for="customer-needs">Describe your needs:</label>
+                <textarea id="customer-needs" name="customer-needs" required></textarea>
+                <button type="submit">Submit Order</button>
+            </form>
+            <div id="order-response"></div>
+        </section>
+        <section id="ai-assistant" class="chat-section">
+            <div class="chat-window">
+                <div class="chat-header">
+                    <span>RoyDesigners Assistant</span>
+                    <button class="close-chat" title="Close">×</button>
+                </div>
+                <div id="chat-log" class="chat-log">
+                    <div class="chat-msg ai-msg">Hi! I'm the RoyDesigners assistant. How can I help you today?</div>
+                </div>
+                <div class="chat-input-row">
+                    <input type="text" id="chat-input" placeholder="Ask about pricing, services...">
+                    <button id="send-btn" class="btn-primary">Send</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 RoyDesigners | Contact: <a href="tel:0789834528">0789834528</a></p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
